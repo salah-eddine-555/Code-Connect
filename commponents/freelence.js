@@ -1,9 +1,3 @@
-
-
-
-
-
-
 // // function 1 pour lister les freelencer(son photo, specialisation , leur moyenne)charge depuis json
 // function (){
 

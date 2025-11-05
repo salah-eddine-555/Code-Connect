@@ -1,2 +1,74 @@
-
-
+{
+  "freelancers": [
+    {
+      "id": 1,
+      "name": "Mohamed El Amrani",
+      "profile_picture": "./data.pdp1.jpg",
+      "specialization": "Designer UI/UX",
+      "rating": 4.6
+    },
+    {
+      "id": 2,
+      "name": "Youssef Karim",
+      "profile_picture": "./data.pdp2.jpg",
+      "specialization": "Développeur Back-End",
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "name": "Adam Bensaid",
+      "profile_picture": "./data.pdp3.jpg",
+      "specialization": "Développeur Mobile Flutter",
+      "rating": 4.4
+    },
+    {
+      "id": 4,
+      "name": "Hicham Toumi",
+      "profile_picture": "./data.pdp4.jpg",
+      "specialization": "Rédacteur Web SEO",
+      "rating": 4.7
+    },
+    {
+      "id": 5,
+      "name": "Omar Rahmani",
+      "profile_picture": "./data.pdp5.jpg",
+      "specialization": "Développeur Front-End React",
+      "rating": 4.8
+    },
+    {
+      "id": 6,
+      "name": "Anas El Fassi",
+      "profile_picture": "./data.pdp6.jpg",
+      "specialization": "Spécialiste en Cybersécurité",
+      "rating": 4.9
+    },
+    {
+      "id": 7,
+      "name": "Khalid Bouziane",
+      "profile_picture": "./data.pdp7.jpg",
+      "specialization": "Développeur Full Stack",
+      "rating": 4.6
+    },
+    {
+      "id": 8,
+      "name": "Sami Ait Taleb",
+      "profile_picture": "./data.pdp8.jpg",
+      "specialization": "Consultant Data Analyst",
+      "rating": 4.5
+    },
+    {
+      "id": 9,
+      "name": "Rachid Benomar",
+      "profile_picture": "./data.pdp9.jpg",
+      "specialization": "Spécialiste en Marketing Digital",
+      "rating": 4.3
+    },
+    {
+      "id": 10,
+      "name": "Hamza El Idrissi",
+      "profile_picture": "./data.pdp10.jpg",
+      "specialization": "Développeur PHP & Laravel",
+      "rating": 4.8
+    }
+  ]
+}
