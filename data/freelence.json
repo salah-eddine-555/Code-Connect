@@ -1,0 +1,28 @@
+
+
+[
+  {
+    "id": 1,
+    "nom": "Sofia Benali",
+    "photo": "images/sofia.jpg",
+    "specialisation": "Développeuse Web",
+    "moyenne": 4.8,
+    "bio": "Passionnée par le développement web full-stack.",
+    "competences": ["HTML", "CSS", "JavaScript", "React"],
+    "tarif": "35€/h",
+    "projets": ["Site e-commerce", "Portfolio", "App React"],
+    "avis": "Très professionnelle et à l'écoute"
+  },
+  {
+    "id": 2,
+    "nom": "Youssef El Amrani",
+    "photo": "images/youssef.jpg",
+    "specialisation": "Designer UI/UX",
+    "moyenne": 4.6,
+    "bio": "Expert en design d'interfaces modernes et intuitives.",
+    "competences": ["Figma", "Photoshop", "Illustrator"],
+    "tarif": "30€/h",
+    "projets": ["Application mobile", "Landing page"],
+    "avis": "Excellent sens du design"
+  }
+]
