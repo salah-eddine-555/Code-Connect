@@ -8,6 +8,8 @@ async function getText(file) {
   console.log(w.firstname);
 }
 
+getText('../data/freelence.json')
+
 
 
 
