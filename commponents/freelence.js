@@ -1,9 +1,3 @@
-
-
-
-
-
-
 // // function 1 pour lister les freelencer(son photo, specialisation , leur moyenne)charge depuis json
 // function (){
 
@@ -33,6 +27,27 @@
 
 
 // }
+// js dial modal handeling 
+
+const openBtn = document.getElementById('open');
+const closeBtn = document.getElementById('Close');
+const modalContainer = document.querySelector('.modal-container');
+
+openBtn.addEventListener('click', () => {
+    modalContainer.classList.add('show-modal');
+});
+
+// Event listener to close the modal
+closeBtn.addEventListener('click', () => {
+    modalContainer.classList.remove('show-modal');
+});
+
+// Optional: Close modal by clicking outside of it
+window.addEventListener('click', (e) => {
+    if (e.target === modalContainer) {
+        modalContainer.classList.remove('show-modal');
+    }
+});
 
 // form validation using Regex //
 const form = document.getElementById('form');

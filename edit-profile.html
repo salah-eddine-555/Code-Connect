@@ -1,17 +1,14 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test javascript</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.scss">
-    <script defer src="./index.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.scss">
 </head>
 <body>
-    <div class="container">
+    <button id="open">Edit profile</button>
+    <div class="modal-container">
         <form id="form" action="/">
             <h1>Edit Profile</h1>
             <div class="input-control">
@@ -34,7 +31,7 @@
                 <input id="password2"name="password2" type="password" value="123451234567">
                 <div class="error"></div>
             </div>
-            <button type="submit"><a href="edit-profile.html">Save changes</a></button>
+            <button type="submit" id="Close"><a href="edit-profile.html">Save changes</a></button>
         </form>
     </div>
     <script src="commponents/freelence.js"></script>
