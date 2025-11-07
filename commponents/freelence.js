@@ -83,6 +83,27 @@ function affichierDeatils(freelencer) {
 
 
 // }
+// js dial modal handeling 
+
+const openBtn = document.getElementById('open');
+const closeBtn = document.getElementById('Close');
+const modalContainer = document.querySelector('.modal-container');
+
+openBtn.addEventListener('click', () => {
+    modalContainer.classList.add('show-modal');
+});
+
+// Event listener to close the modal
+closeBtn.addEventListener('click', () => {
+    modalContainer.classList.remove('show-modal');
+});
+
+// Optional: Close modal by clicking outside of it
+window.addEventListener('click', (e) => {
+    if (e.target === modalContainer) {
+        modalContainer.classList.remove('show-modal');
+    }
+});
 // }
 
 // form validation using Regex 
@@ -157,4 +178,8 @@ function affichierDeatils(freelencer) {
 //         setSuccess(password2);
 //     }
 
+<<<<<<< HEAD
 // };
+=======
+};
+>>>>>>> 1e4ceee679f80fb9b33ffa47aa37a7e9fc7c3438
