@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-filtre{
+    margin-top: 20px;
+    justify-self: center;
+    width: 95%;
+    height: 50px;
+    border-radius: 12px;
+    background-color: rgb(13, 109, 252);
+    display: flex;
+    flex-direction: column;
+}
+
+.section-freelance {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    padding: 24px 24px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.ul-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}

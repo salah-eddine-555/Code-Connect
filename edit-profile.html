@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="open">Edit profile</button>
+    <div class="modal-container">
+        <form id="form" action="/">
+            <h1>Edit Profile</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" value="@freelancer">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" value="Freelancer@gmail.com">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password" value="123451234567">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Password again</label>
+                <input id="password2"name="password2" type="password" value="123451234567">
+                <div class="error"></div>
+            </div>
+            <button type="submit" id="Close"><a href="edit-profile.html">Save changes</a></button>
+        </form>
+    </div>
+    <script src="commponents/freelence.js"></script>
+</body>
+</html>
