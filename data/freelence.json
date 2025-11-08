@@ -5,70 +5,196 @@
       "name": "Mohamed El Amrani",
       "profile_picture": "/pdp/pdp1.jpg",
       "specialization": "UI/UX",
-      "rating": "4.6 ⭐"
+      "rating": "4.6 ⭐",
+      "bio": "Designer créative avec une forte expérience dans la conception d’interfaces intuitives et esthétiques.",
+      "competences": ["Figma", "Adobe XD", "Photoshop", "Illustrator", "Prototypage", "UX Research"],
+      "projets": [
+              "Refonte de site TravelWay",
+              "Application mobile Foodiez",
+              "Tableau de bord AdminEase"
+      ],
+    "avis": [
+          "Très à l’écoute des besoins du client.",
+          "Design moderne et fluide, je recommande !",
+          "Excellent sens esthétique et réactivité."
+    ]
     },
+
+    
     {
       "id": 2,
       "name": "Youssef Karim",
       "profile_picture": "/pdp/pdp2.jpg",
       "specialization": "Back-End",
-      "rating": "4.5 ⭐"
+      "rating": "4.5 ⭐",
+       "bio": "Spécialisé en JavaScript moderne, je crée des sites et applications performants avec React et Node.js.",
+      "competences": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "MongoDB"],
+      "projets": [
+                "Plateforme e-commerce ShopNow",
+                "Application mobile BookMe",
+                "Dashboard analytique DataVision"
+                ],
+    "avis": [
+      "Travail rapide et de très bonne qualité.",
+      "Toujours à l’écoute et très professionnel.",
+      "Excellent sens du détail dans le design."
+    ]
     },
+
     {
       "id": 3,
       "name": "Adam Bensaid",
       "profile_picture": "/pdp/pdp3.jpg",
       "specialization": "Front-End",
-      "rating": "4.4 ⭐"
+      "rating": "4.4 ⭐",
+      "bio": "Designer créative avec une forte expérience dans la conception d’interfaces intuitives et esthétiques.",
+      "competences": ["Figma", "Adobe XD", "Photoshop", "Illustrator", "Prototypage", "UX Research"],
+      "projets": [
+              "Refonte de site TravelWay",
+              "Application mobile Foodiez",
+              "Tableau de bord AdminEase"
+      ],
+    "avis": [
+          "Très à l’écoute des besoins du client.",
+          "Design moderne et fluide, je recommande !",
+          "Excellent sens esthétique et réactivité."
+    ]
     },
+
     {
       "id": 4,
       "name": "Hicham Toumi",
       "profile_picture": "/pdp/pdp4.jpg",
       "specialization": "Full-stack",
-      "rating": "4.7 ⭐"
+      "rating": "4.7 ⭐",
+      "bio": "Expert en Node.js et API REST, j’assure la stabilité et la sécurité des applications web.",
+    "competences": ["Node.js", "Express", "MySQL", "MongoDB", "API REST", "JWT", "Docker"],
+    "projets": [
+              "API de gestion d’événements EventHub",
+              "Système d’authentification sécurisée SafeLogin",
+              "Serveur de chat en temps réel ChatNow"
+    ],
+    "avis": [
+      "Code propre et bien structuré.",
+      "Bonne communication et respect des délais.",
+      "Résout rapidement les problèmes techniques."
+    ]
     },
+
     {
       "id": 5,
       "name": "Omar Rahmani",
       "profile_picture": "/pdp/pdp5.jpg",
       "specialization": "Front-End",
-      "rating": "4.8 ⭐"
+      "rating": "4.8 ⭐",
+       "bio": "Je crée des interfaces modernes et réactives en utilisant React, Vue et TailwindCSS.",
+    "competences": ["HTML", "CSS", "JavaScript", "React", "Vue.js", "TailwindCSS", "TypeScript"],
+    "projets": [
+            "Application de réservation BookEasy",
+            "Portfolio artistique ArtShow",
+            "Tableau de bord de gestion TaskFlow"
+    ],
+    "avis": [
+      "Interface magnifique et fluide.",
+      "Toujours disponible pour les ajustements.",
+      "Très impliquée dans chaque projet."
+    ]
     },
     {
       "id": 6,
       "name": "Anas El Fassi",
       "profile_picture": "/pdp/pdp6.jpg",
       "specialization": "UI/UX",
-      "rating": "4.9 ⭐"
+      "rating": "4.9 ⭐",
+      "bio": "Expert en création de sites WordPress professionnels avec SEO optimisé et intégration WooCommerce.",
+      "competences": ["PHP", "WordPress", "MySQL", "HTML", "CSS", "WooCommerce", "SEO"],
+      "projets": [
+            "Site d’agence immobilière CasaHome",
+            "Blog technologique TechMag",
+            "Site vitrine AutoStyle"
+    ],
+    "avis": [
+      "Excellent rapport qualité-prix.",
+      "Site livré clé en main, parfait !",
+      "Communication fluide et rapide."
+    ]
     },
     {
       "id": 7,
       "name": "Khalid Bouziane",
       "profile_picture": "/pdp/pdp7.jpg",
       "specialization": "Full-Stack",
-      "rating": "4.6 ⭐"
+      "rating": "4.6 ⭐",
+      "bio": "Je développe des applications mobiles performantes et multi-plateformes avec Flutter et Firebase.",
+      "competences": ["Flutter", "Dart", "Firebase", "API REST", "UX mobile", "SQLite"],
+      "projets": [
+            "Application de livraison FastDrop",
+            "Outil de gestion scolaire EduTrack",
+            "App de réservation beauté GlamMe"
+    ],
+    "avis": [
+      "Application fluide et bien pensée.",
+      "Très professionnelle, livraison rapide.",
+      "Travail de qualité et bon suivi après projet."
+    ]
+
     },
     {
       "id": 8,
       "name": "Sami Ait Taleb",
       "profile_picture": "/pdp/pdp8.jpg",
       "specialization": "Data Analyst",
-      "rating": "4.5 ⭐"
+      "rating": "4.5 ⭐",
+      "bio": "Je transforme les données en solutions concrètes grâce à Python, Pandas et Power BI.",
+      "competences": ["Python", "Pandas", "NumPy", "Power BI", "SQL", "Machine Learning"],
+      "projets": [
+            "Analyse de ventes pour ShopTrend",
+            "Automatisation de reporting FinTrack",
+            "Système de recommandation MovieMatch"
+    ],
+    "avis": [
+      "Très bon travail analytique.",
+      "Données bien présentées et fiables.",
+      "A fourni un excellent support technique."
+    ]
     },
     {
       "id": 9,
       "name": "Rachid Benomar",
       "profile_picture": "/pdp/pdp9.jpg",
       "specialization": "Back-End",
-      "rating": "4.3 ⭐"
+      "rating": "4.3 ⭐",
+      "bio": "Rédactrice passionnée par le contenu digital, j’écris des articles optimisés SEO pour améliorer la visibilité en ligne.",
+      "competences": ["SEO", "Copywriting", "Rédaction web", "WordPress", "Recherche de mots-clés"],
+      "projets": [
+          "Blog de voyage TravelMood",
+          "Contenu SEO pour GreenMarket",
+          "Rédaction de fiches produits FashionUp"
+    ],
+    "avis": [
+      "Texte fluide et naturel.",
+      "Travail très professionnel et rapide.",
+      "Excellent sens du storytelling."
+    ]
     },
     {
       "id": 10,
       "name": "Hamza El Idrissi",
       "profile_picture": "/pdp/pdp10.jpg",
       "specialization": "Data Analyst",
-      "rating": "4.8 ⭐"
+      "rating": "4.8 ⭐",
+      "bio": "Je transforme vos maquettes en sites web responsives et performants, optimisés pour tous les écrans.",
+      "competences": ["HTML", "CSS", "JavaScript", "Bootstrap", "SASS", "Angular"],
+      "projets": [
+          "Intégration du site HealthCare+",
+          "Landing page SmartStart",
+          "Portfolio photographe PixelView"
+    ],
+    "avis": [
+      "Code HTML/CSS impeccable.",
+      "Livraison dans les délais.",
+      "Très réactif et travail soigné."
+    ]
     }
   ]
 }
