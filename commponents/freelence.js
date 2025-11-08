@@ -178,8 +178,4 @@ window.addEventListener('click', (e) => {
 //         setSuccess(password2);
 //     }
 
-<<<<<<< HEAD
 // };
-=======
-};
->>>>>>> 1e4ceee679f80fb9b33ffa47aa37a7e9fc7c3438
