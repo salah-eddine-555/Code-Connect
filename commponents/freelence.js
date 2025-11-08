@@ -118,16 +118,6 @@ async function affichierDeatils(){
  
         });    
     });
-
-       
-
-       
-    
-
- 
-
-    
-
 }
 
 

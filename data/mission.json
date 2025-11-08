@@ -1,0 +1,85 @@
+
+
+[
+  {
+    "id": "1",
+    "title": "Développeur Front-End React",
+    "description": "Développer une interface utilisateur moderne avec React et Tailwind pour une application web SaaS.",
+    "company": "Startup X",
+    "location": "Remote",
+    "duration": "3 mois",
+    "budget": "30-40 €/h"
+  },
+  {
+    "id": "2",
+    "title": "Intégrateur Web HTML/CSS",
+    "description": "Intégrer des maquettes Figma en HTML/CSS responsive pour un site e-commerce.",
+    "company": "Agence WebZ",
+    "location": "Paris, France",
+    "duration": "1 mois",
+    "budget": "1000 €"
+  },
+  {
+    "id": "3",
+    "title": "Développeur Backend PHP / Laravel",
+    "description": "Créer une API REST sécurisée pour la gestion d’utilisateurs et produits en Laravel 10.",
+    "company": "TechNova",
+    "location": "Lyon, France",
+    "duration": "4 mois",
+    "budget": "35-55 €/h"
+  },
+  {
+    "id": "4",
+    "title": "Data Analyst Junior",
+    "description": "Analyser les données clients et produire des rapports mensuels via Power BI et SQL.",
+    "company": "DataCorp",
+    "location": "Remote",
+    "duration": "2 mois",
+    "budget": "2500 €"
+  },
+  {
+    "id": "5",
+    "title": "Designer UI/UX Mobile",
+    "description": "Refondre le design d’une application mobile iOS/Android avec Figma et prototypage interactif.",
+    "company": "MobileLab",
+    "location": "Marseille, France",
+    "duration": "1 mois",
+    "budget": "2800 €"
+  },
+  {
+    "id": "6",
+    "title": "DevOps Engineer AWS",
+    "description": "Mettre en place une infrastructure CI/CD et déploiement automatisé sur AWS avec Docker.",
+    "company": "Cloudify",
+    "location": "Remote",
+    "duration": "5 mois",
+    "budget": "50-70 €/h"
+  },
+  {
+    "id": "7",
+    "title": "Développeur Mobile Flutter",
+    "description": "Créer une application mobile cross-platform pour une startup de livraison rapide.",
+    "company": "FastShip",
+    "location": "Casablanca, Maroc",
+    "duration": "3 mois",
+    "budget": "6000 €"
+  },
+  {
+    "id": "8",
+    "title": "Consultant SEO",
+    "description": "Effectuer un audit SEO complet et proposer une stratégie d’optimisation du contenu.",
+    "company": "MarketUp",
+    "location": "Remote",
+    "duration": "3 semaines",
+    "budget": "1200 €"
+  },
+  {
+    "id": "9",
+    "title": "Développeur Fullstack Node.js / React",
+    "description": "Concevoir une plateforme web complète avec Node.js (API) et React (frontend).",
+    "company": "InnovaTech",
+    "location": "Toulouse, France",
+    "duration": "6 mois",
+    "budget": "7000 €"
+  }
+]
