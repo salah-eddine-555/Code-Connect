@@ -112,19 +112,15 @@ async function affichierDeatils(){
                         });
 
                         document.getElementById("btn-modifier").addEventListener("click", function () {
-                            // This code pre-fills the form
                             const freelancerEmail = element.email || `${element.name.toLowerCase().replace(/\s/g, '.')}@example.com`;
                             
                             if(username) username.value = element.name;
                             if(email) email.value = freelancerEmail;
+                            if(bio) bio.value = element.bio;
+                            if(specialization) specialization.value = element.specialization;
                             
-                            if(password) password.value = "";
-                            if(password2) password2.value = "";
-                            
-                            // This line is added to track which user is being edited
                             form.dataset.editingId = element.id;
                             
-                            // This code clears old errors
                             const inputs = form.querySelectorAll('.input-control');
                             inputs.forEach(input => {
                                 input.classList.remove('success', 'error');
@@ -133,7 +129,6 @@ async function affichierDeatils(){
                                 }
                             });
 
-                            // This code opens the modal
                             openModal();
                         });
                      
@@ -147,7 +142,6 @@ async function affichierDeatils(){
             const cardId = this.id;
             console.log(cardId);
 
-            // tu pourras ici charger les détails du freelance
             getDetailsById(data.freelancers, cardId);
  
         });    
@@ -156,7 +150,7 @@ async function affichierDeatils(){
 }
 
 // // function 3  ( je veux pouvoir modifier mon profil via un formulaire avec validation)
-async function modifyinfos(id, newUsername, newEmail) {
+async function modifyinfos(id, newUsername, newEmail, newBio, newSpecialization) {
     const currentData = await getData();
     
     const freelancerIndex = currentData.freelancers.findIndex(f => String(f.id) === String(id));
@@ -164,6 +158,8 @@ async function modifyinfos(id, newUsername, newEmail) {
     if (freelancerIndex > -1) {
         currentData.freelancers[freelancerIndex].name = newUsername;
         currentData.freelancers[freelancerIndex].email = newEmail;
+        currentData.freelancers[freelancerIndex].bio = newBio;
+        currentData.freelancers[freelancerIndex].specialization = newSpecialization;
         
         localStorage.setItem(STORAGE_KEY, JSON.stringify(currentData));
         
@@ -199,20 +195,21 @@ function closeModal() {
 // form validation using Regex 
 const username = document.getElementById('username');
 const email = document.getElementById('email');
-const password = document.getElementById('password');
-const password2 = document.getElementById('password2');
+const bio = document.getElementById('bio');
+const specialization = document.getElementById('specialization');
 
 
 form.addEventListener('submit', e => {
     e.preventDefault(); 
 
-    // Check if inputs are valid
     if (validateInputs()) {
         const newUsername = username.value.trim();
         const newEmail = email.value.trim();
+        const newBio = bio.value.trim();
+        const newSpecialization = specialization.value;
         const idToEdit = form.dataset.editingId;
 
-        modifyinfos(idToEdit, newUsername, newEmail);
+        modifyinfos(idToEdit, newUsername, newEmail, newBio, newSpecialization);
         
         closeModal();
         delete form.dataset.editingId;
@@ -248,8 +245,7 @@ const isValidEmail = email => {
 const validateInputs = () => {
     const usernameValue = username.value.trim();
     const emailValue = email.value.trim();
-    const passwordValue = password.value.trim();
-    const password2Value = password2.value.trim();
+    const bioValue = bio.value.trim();
     let isValid = true; 
 
     if(usernameValue === '') {
@@ -269,53 +265,14 @@ const validateInputs = () => {
         setSuccess(email);
     }
 
-
-    if (passwordValue !== '' || password2Value !== '') {
-        if(passwordValue === '') {
-            setError(password, 'Password is required');
-            isValid = false;
-        } else if (passwordValue.length < 8 ) {
-            setError(password, 'Password must be at least 8 character.');
-            isValid = false;
-        } else {
-            setSuccess(password);
-        }
-
-        if(password2Value === '') {
-            setError(password2, 'Please confirm your password');
-            isValid = false;
-        } else if (password2Value !== passwordValue) {
-            setError(password2, "Passwords doesn't match");
-            console.log(isValid);
-            isValid = false;
-        } else {
-            setSuccess(password2);
-        }
+    if(bioValue === '') {
+        setError(bio, 'A short bio is required');
+        isValid = false;
     } else {
-    
-        setSuccess(password);
-        setSuccess(password2);
+        setSuccess(bio);
     }
+    
+    setSuccess(specialization);
 
     return isValid; 
 };
-
-
-
-
-// // function 4 (fonction pour  filtrer les freelances par spécialité (Développeur Web, Designer, Rédacteur, etc.).)
-// function (){
-
-
-
-
-
-
-
-
-
-
-
-
-
-// }

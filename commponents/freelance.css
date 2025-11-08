@@ -148,3 +148,22 @@ a {
   text-decoration: none;
   color: white;
 }
+.input-control textarea:focus,
+.input-control select:focus {
+  outline: 0;
+}
+
+.input-control.success textarea,
+.input-control.success select {
+  border-color: #09c372;
+}
+
+.input-control.error textarea,
+.input-control.error select {
+  border-color: #ff3860;
+}
+
+.input-control textarea {
+    resize: vertical;
+    min-height: 80px;
+}
