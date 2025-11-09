@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Mission</title>
+</head>
+  <style>
+    /* Conteneur principal : transforme .row en flex propre */
+body{
+  padding-top: 20px;
+}
+#section-mission{
+ display: flex;
+  flex-direction: row;    /* ✅ cartes en ligne (horizontalement) */
+  flex-wrap: wrap;        /* ✅ passe à la ligne quand plus de place */
+  justify-content: space-evenly;/* ✅ centre les cartes au milieu */
+  align-items: flex-start; /* aligne le haut des cartes */
+  gap: 20px;              /* espace entre les cartes */
+  margin-top: 30px;
+  padding: 10px;
+}
+
+/* Style des cartes */
+.mission-card {
+  flex: 1 1 300px;         /* largeur min 300px, s’adapte selon la taille de l’écran */
+  max-width: 350px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #fff;
+}
+
+.mission-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+.mission-card .card-text {
+  flex-grow: 1;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Style des badges */
+.badge {
+  font-size: 0.85rem;
+  background-color: #f8f9fa;
+  color: #333;
+  border-radius: 10px;
+  padding: 0.4em 0.6em;
+}
+
+.badge.bg-secondary {
+  background-color: #dee2e6 !important;
+}
+
+.badge.bg-success {
+  background-color: #198754 !important;
+  color: #fff;
+}
+  </style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Code-Connect</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../freelence.html">Freelance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mission/">Missions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">service</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <h1 class="text-center mb-4 mt-10">💼 Missions disponibles</h1>
+    <section id="section-mission">
+         
+        
+                 <!-- Les cartes seront insérées ici dynamiquement -->
+      
+
+    </section>
+    
+
+    <script src="mission.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
