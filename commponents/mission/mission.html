@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Mission</title>
 </head>
   <style>
-    /* ... (Your existing card/section styles are here) ... */
+    /* Conteneur principal : transforme .row en flex propre */
 body{
   padding-top: 20px;
 }
 #section-mission{
  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: row;   
+  flex-wrap: wrap;        
   justify-content: space-evenly;
   align-items: flex-start; 
-  gap: 20px;
+  gap: 20px;              
   margin-top: 30px;
   padding: 10px;
 }
+
+/* Style des cartes */
 .mission-card {
-  flex: 1 1 300px;
+  flex: 1 1 300px;      
   max-width: 350px;
   border: 1px solid #e0e0e0;
   border-radius: 12px;
@@ -31,6 +32,7 @@ body{
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   background-color: #fff;
 }
+
 .mission-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.12);
@@ -40,6 +42,8 @@ body{
   font-size: 0.95rem;
   color: #444;
 }
+
+/* Style des badges */
 .badge {
   font-size: 0.85rem;
   background-color: #f8f9fa;
@@ -47,9 +51,11 @@ body{
   border-radius: 10px;
   padding: 0.4em 0.6em;
 }
+
 .badge.bg-secondary {
   background-color: #dee2e6 !important;
 }
+
 .badge.bg-success {
   background-color: #198754 !important;
   color: #fff;
@@ -231,6 +237,16 @@ body{
             <button type="button" id="close-modal-btn">Fermer</button>
         </form>
     </div>
+    <h1 class="text-center mb-4 mt-10">Missions disponibles</h1>
+    <section id="section-mission">
+         
+        
+                 <!-- Les cartes seront insérées ici dynamiquement -->
+      
+
+    </section>
+    
+
     <script src="mission.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
