@@ -39,7 +39,7 @@
   },
   {
     "id": "5",
-    "title": "Designer UI/UX Mobile",
+    "title": "Consultant SEO",
     "description": "Refondre le design d’une application mobile iOS/Android avec Figma et prototypage interactif.",
     "company": "MobileLab",
     "location": "Marseille, France",
@@ -57,7 +57,7 @@
   },
   {
     "id": "7",
-    "title": "Développeur Mobile Flutter",
+    "title": "DevOps Engineer AWSr",
     "description": "Créer une application mobile cross-platform pour une startup de livraison rapide.",
     "company": "FastShip",
     "location": "Casablanca, Maroc",
@@ -80,6 +80,15 @@
     "company": "InnovaTech",
     "location": "Toulouse, France",
     "duration": "6 mois",
+    "budget": "7000 €"
+  },
+   {
+    "id": "10",
+    "title": "Développeur Front-End React",
+    "description": "Concevoir une plateforme web complète avec Node.js (API) et React (frontend).",
+    "company": "InnovaTech",
+    "location": "Toulouse, France",
+    "duration": "10 mois",
     "budget": "7000 €"
   }
 ]
