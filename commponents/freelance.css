@@ -43,6 +43,132 @@ li {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 .card:hover {
     box-shadow: 8px 8px 50px black;
+=======
+/* --- Styles from style.css (Modal) --- */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+button:active {
+  transform: scale(0.98);
+}
+
+#Close {
+  background-color: #f44336;
+  margin-top: 1rem;
+}
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal-container.show-modal {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-container.show-modal .modal {
+  transform: scale(1);
+}
+
+.modal h1 {
+  margin: 0;
+  color: #333;
+}
+
+#form {
+  width: 300px;
+  margin: 20vh auto 0 auto;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  font-size: 12px;
+  border: #108a00 1px solid;
+}
+#form h1 {
+  color: #0f2027;
+  text-align: center;
+}
+#form button {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  color: white;
+  background-color: #108a00;
+  border: none;
+  border-radius: 4px;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+.input-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+  width: 100%;
+}
+.input-control input:focus {
+  outline: 0;
+}
+.input-control .error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.input-control textarea:focus,
+.input-control select:focus {
+  outline: 0;
+}
+
+.input-control.success textarea,
+.input-control.success select {
+  border-color: #09c372;
+}
+
+.input-control.error textarea,
+.input-control.error select {
+  border-color: #ff3860;
+}
+
+.input-control textarea {
+    resize: vertical;
+    min-height: 80px;
+>>>>>>> 86aa4c4ea1e891c73522a2831d145d7b4aeb088f
 }
