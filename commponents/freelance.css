@@ -43,10 +43,6 @@ li {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-.card:hover {
-    box-shadow: 8px 8px 50px black;
-=======
 /* --- Styles from style.css (Modal) --- */
 button {
   background-color: #4CAF50;
@@ -170,5 +166,8 @@ a {
 .input-control textarea {
     resize: vertical;
     min-height: 80px;
->>>>>>> 86aa4c4ea1e891c73522a2831d145d7b4aeb088f
+}
+
+.card:hover {
+  box-shadow: 10px 10px 100px black;
 }
