@@ -2,13 +2,13 @@ const STORAGE_KEY = 'freelancerData';
 
 async function getData() {
     const storedData = localStorage.getItem(STORAGE_KEY);
-    
+
     if (storedData) {
         return JSON.parse(storedData);
     } else {
         const freelance = await fetch('../data/freelence.json');
         const dataFreeelance = await freelance.json();
-        
+
         localStorage.setItem(STORAGE_KEY, JSON.stringify(dataFreeelance));
         return dataFreeelance;
     }
@@ -18,7 +18,7 @@ async function getData() {
 function afficherListeFreelancers() {
     async function main() {
         const data = await getData();
-    
+
         let cardParent = document.getElementsByClassName('section-freelance')[0];
         let card = "";
 
@@ -38,8 +38,8 @@ function afficherListeFreelancers() {
         cardParent.innerHTML = card;
         affichierDeatils();
     }
-     main();
-     
+    main();
+
 
 }
 
@@ -47,21 +47,21 @@ afficherListeFreelancers();
 
 // // function 2 lorsuqe le clicl il faut afficher les details de freelencer (bio, compétences, projets, tarifs, avis).
 ///////////////////////////////////////////////////////
-async function affichierDeatils(){
+async function affichierDeatils() {
     const data = await getData();
     const detailSection = document.getElementById("details-section");
     const freelanceSection = document.getElementsByClassName("section-freelance")[0];
-    
+
     const buttons = document.querySelectorAll(".btn-primary");
 
-       function getDetailsById(data, id){
-                for(const element of data){
-                   if(String(element.id) === String(id)){
-                     console.log(element.name);
-                     console.log(element.specialization);
-                     console.log(element.rating);
+    function getDetailsById(data, id) {
+        for (const element of data) {
+            if (String(element.id) === String(id)) {
+                console.log(element.name);
+                console.log(element.specialization);
+                console.log(element.rating);
 
-                     detailSection.innerHTML = `
+                detailSection.innerHTML = `
                                             <div class="container-fluid p-3 bg-light">
                                                 <div class="card shadow-lg rounded">
                                                     <div class="row g-0">
@@ -101,50 +101,50 @@ async function affichierDeatils(){
                                             </div>
                                             `;
 
-                        detailSection.style.display = "block";
+                detailSection.style.display = "block";
 
-                        freelanceSection.style.display = "none";
-                        detailSection.style.display = "block";
+                freelanceSection.style.display = "none";
+                detailSection.style.display = "block";
 
-                        document.getElementById("btn-fermer").addEventListener("click", function () {
-                            detailSection.style.display = "none";
-                            freelanceSection.style.display = "";
-                        });
+                document.getElementById("btn-fermer").addEventListener("click", function () {
+                    detailSection.style.display = "none";
+                    freelanceSection.style.display = "";
+                });
 
-                        document.getElementById("btn-modifier").addEventListener("click", function () {
-                            const freelancerEmail = element.email || `${element.name.toLowerCase().replace(/\s/g, '.')}@example.com`;
-                            
-                            if(username) username.value = element.name;
-                            if(email) email.value = freelancerEmail;
-                            if(bio) bio.value = element.bio;
-                            if(specialization) specialization.value = element.specialization;
-                            
-                            form.dataset.editingId = element.id;
-                            
-                            const inputs = form.querySelectorAll('.input-control');
-                            inputs.forEach(input => {
-                                input.classList.remove('success', 'error');
-                                if(input.querySelector('.error')) {
-                                    input.querySelector('.error').innerText = '';
-                                }
-                            });
+                document.getElementById("btn-modifier").addEventListener("click", function () {
+                    const freelancerEmail = element.email || `${element.name.toLowerCase().replace(/\s/g, '.')}@example.com`;
 
-                            openModal();
-                        });
-                     
-                   }
-                }
+                    if (username) username.value = element.name;
+                    if (email) email.value = freelancerEmail;
+                    if (bio) bio.value = element.bio;
+                    if (specialization) specialization.value = element.specialization;
+
+                    form.dataset.editingId = element.id;
+
+                    const inputs = form.querySelectorAll('.input-control');
+                    inputs.forEach(input => {
+                        input.classList.remove('success', 'error');
+                        if (input.querySelector('.error')) {
+                            input.querySelector('.error').innerText = '';
+                        }
+                    });
+
+                    openModal();
+                });
+
             }
-    
+        }
+    }
 
-      buttons.forEach(button => {
-        button.addEventListener("click", function() {
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
             const cardId = this.id;
             console.log(cardId);
 
             getDetailsById(data.freelancers, cardId);
- 
-        });    
+
+        });
     });
 
 }
@@ -152,7 +152,7 @@ async function affichierDeatils(){
 // // function 3  ( je veux pouvoir modifier mon profil via un formulaire avec validation)
 async function modifyinfos(id, newUsername, newEmail, newBio, newSpecialization) {
     const currentData = await getData();
-    
+
     const freelancerIndex = currentData.freelancers.findIndex(f => String(f.id) === String(id));
 
     if (freelancerIndex > -1) {
@@ -160,9 +160,9 @@ async function modifyinfos(id, newUsername, newEmail, newBio, newSpecialization)
         currentData.freelancers[freelancerIndex].email = newEmail;
         currentData.freelancers[freelancerIndex].bio = newBio;
         currentData.freelancers[freelancerIndex].specialization = newSpecialization;
-        
+
         localStorage.setItem(STORAGE_KEY, JSON.stringify(currentData));
-        
+
         console.log("data mchat l local storage");
 
         document.getElementsByClassName('section-freelance')[0].innerHTML = "";
@@ -200,7 +200,7 @@ const specialization = document.getElementById('specialization');
 
 
 form.addEventListener('submit', e => {
-    e.preventDefault(); 
+    e.preventDefault();
 
     if (validateInputs()) {
         const newUsername = username.value.trim();
@@ -210,7 +210,7 @@ form.addEventListener('submit', e => {
         const idToEdit = form.dataset.editingId;
 
         modifyinfos(idToEdit, newUsername, newEmail, newBio, newSpecialization);
-        
+
         closeModal();
         delete form.dataset.editingId;
     } else {
@@ -246,33 +246,33 @@ const validateInputs = () => {
     const usernameValue = username.value.trim();
     const emailValue = email.value.trim();
     const bioValue = bio.value.trim();
-    let isValid = true; 
+    let isValid = true;
 
-    if(usernameValue === '') {
+    if (usernameValue === '') {
         setError(username, 'Username is required');
-        isValid = false; 
+        isValid = false;
     } else {
         setSuccess(username);
     }
 
-    if(emailValue === '') {
+    if (emailValue === '') {
         setError(email, 'Email is required');
-        isValid = false; 
+        isValid = false;
     } else if (!isValidEmail(emailValue)) {
         setError(email, 'Provide a valid email address');
-        isValid = false; 
+        isValid = false;
     } else {
         setSuccess(email);
     }
 
-    if(bioValue === '') {
+    if (bioValue === '') {
         setError(bio, 'A short bio is required');
         isValid = false;
     } else {
         setSuccess(bio);
     }
-    
+
     setSuccess(specialization);
 
-    return isValid; 
+    return isValid;
 };
