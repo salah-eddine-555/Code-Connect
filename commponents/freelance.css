@@ -29,7 +29,7 @@
     object-position: center;
 }
 
-.ul-list{
+#ul-list{
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
@@ -166,4 +166,8 @@ a {
 .input-control textarea {
     resize: vertical;
     min-height: 80px;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 100px black;
 }
