@@ -15,6 +15,11 @@ async function getData() {
 }
 
 // // function 1 pour lister les freelencer(son photo, specialisation , leur moyenne)charge depuis json
+async function getData() {
+    const freelance = await fetch('../data/freelence.json')
+    const dataFreeelance = await freelance.json()
+    return dataFreeelance
+}
 function afficherListeFreelancers() {
     async function main() {
         const data = await getData();
@@ -28,17 +33,20 @@ function afficherListeFreelancers() {
                     <img src="${element.profile_picture}" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">${element.name}</h5>
-                        <p class="card-text">${element.specialization}</p>
-                        <p class="card-text">${element.rating}</p>
+                        <p style = "color: red;" class="card-text">${element.specialization}</p>
+                        <span style = "display: block; margin-bottom: 20px">${element.rating}</span>
                         <button id="${element.id}" class="btn btn-primary">Afficher details</button>
                     </div>
                 </div>
             `;
         }
-        cardParent.innerHTML = card;
-        affichierDeatils();
+        cardParent.innerHTML = card
+        
+        filterBySpecialty()
+        affichierDeatils()
     }
     main();
+    
 
 
 }
@@ -274,5 +282,33 @@ const validateInputs = () => {
 
     setSuccess(specialization);
 
+    return isValid; 
+};
+// function (){
+
+
+// }
+
+
+// // function 4 (fonction pour  filtrer les freelances par spécialité (Développeur Web, Designer, Rédacteur, etc.).)
+function filterBySpecialty() {
+    let list = document.getElementById('ul-list')
+    let specialisation = document.querySelectorAll('p.card-text')
+
+    list.addEventListener('click', function(event){
+        let selected = event.target.textContent
+
+        specialisation.forEach(element => {
+            let card = element.closest('.card')
+            card.style.display = "block"
+
+            if (selected !== "All") {
+                if (element.textContent != selected) {
+                card.style.display = "none"
+                }
+            }
+        });
+    });
+}
     return isValid;
 };
