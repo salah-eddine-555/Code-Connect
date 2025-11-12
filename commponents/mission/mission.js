@@ -16,7 +16,8 @@ function AfficherListesMission(){
     async function main(){
         const sectionMission = document.getElementById("section-mission");
         const datamission = await getMissions();
-        console.log(datamission);
+        
+        // console.log(datamission);
         let cardMission = '';
 
         for(mission of datamission){
