@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "category": "Développement web",
+    "description": "Création d'un site vitrine professionnel sous WordPress, responsive, avec formulaire de contact et optimisation SEO de base.",
+    "price": 450,
+    "currency": "EUR",
+    "delivery_days": 7
+  },
+  {
+    "id": "2",
+    "category": "UX Design",
+    "description": "Audit UX, wireframes, prototypes Figma et livrables UI pour application mobile (iOS/Android).",
+    "price": 1200,
+    "currency": "EUR",
+    "delivery_days": 14
+  },
+  {
+    "id": "3",
+    "category": "Marketing",
+    "description": "Configuration et gestion de campagne Google Ads, A/B testing, rapports hebdomadaires et optimisation du CPA.",
+    "price": 600,
+    "currency": "EUR",
+    "delivery_days": 30
+  },
+  {
+    "id": "4",
+    "category": "Développement web",
+    "description": "Conversion de maquette Figma/PSD en pages HTML5 & CSS3 propres et accessibles, avec animations simples.",
+    "price": 250,
+    "currency": "EUR",
+    "delivery_days": 3
+  },
+  {
+    "id": "5",
+    "category": "Contenu / Rédaction",
+    "description": "Rédaction optimisée SEO de 5 articles de 500 mots chacun, recherche de mots-clés et méta descriptions incluses.",
+    "price": 300,
+    "currency": "EUR",
+    "delivery_days": 10
+  },
+  {
+    "id": "6",
+    "category": "Backend",
+    "description": "API REST en Node.js/Express avec authentification JWT, documentation Swagger et tests unitaires basiques.",
+    "price": 900,
+    "currency": "EUR",
+    "delivery_days": 12
+  },
+  {
+    "id": "7",
+    "category": "Design",
+    "description": "Création de logo vectoriel + mini-charte (couleurs, typographies) ; 3 propositions et 2 révisions.",
+    "price": 180,
+    "currency": "EUR",
+    "delivery_days": 5
+  },
+  {
+    "id": "8",
+    "category": "SEO",
+    "description": "Audit complet on-site avec checklist technique, priorisation des corrections et rapport exportable (CSV/PDF).",
+    "price": 420,
+    "currency": "EUR",
+    "delivery_days": 6
+  },
+  {
+    "id": "9",
+    "category": "Maintenance",
+    "description": "Forfait maintenance mensuelle : mises à jour, backups, surveillance uptime et corrections mineures.",
+    "price": 150,
+    "currency": "EUR",
+    "delivery_days": 30
+  },
+  {
+    "id": "10",
+    "category": "Performance",
+    "description": "Audit et optimisation de performance front-end, réduction du temps de chargement et amélioration CLS/TTFB.",
+    "price": 520,
+    "currency": "EUR",
+    "delivery_days": 8
+  },
+  {
+    "id": "11",
+    "category": "Marketing",
+    "description": "Stratégie réseaux sociaux avec calendrier éditorial, templates visuels et recommandations de croissance.",
+    "price": 350,
+    "currency": "EUR",
+    "delivery_days": 7
+  },
+  {
+    "id": "12",
+    "category": "E-commerce",
+    "description": "Création/optimisation d'une page produit Shopify, configuration des moyens de paiement et du checkout.",
+    "price": 320,
+    "currency": "EUR",
+    "delivery_days": 4
+  }
+]
