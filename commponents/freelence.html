@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="freelance.css">
     <title>Freelance</title>
 </head>`
+
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -16,7 +18,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Freelance</a>
+                <a class="nav-link active" aria-current="page" href="../freelence.html">Freelance</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="mission/mission.html">Missions</a>
@@ -42,48 +44,19 @@
         </ul>
      </section>
 
-    <section class="section-freelance"></section>
-    
-    <section id="details-section" style="display: none;"></section>
 
-    
-    <div class="modal-container">
-        <form id="form" action="/">
-            <h1>Edit Profile</h1>
-            <div class="input-control">
-                <label for="username">Username</label>
-                <input id="username" name="username" type="text">
-                <div class="error"></div>
-            </div>
-            <div class="input-control">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="text">
-                <div class="error"></div>
-            </div>
-            
-            <div class="input-control">
-                <label for="specialization">Specialization</label>
-                <select id="specialization" name="specialization">
-                    <option value="Front-End">Front-End</option>
-                    <option value="Back-End">Back-End</option>
-                    <option value="Full-Stack">Full-Stack</option>
-                    <option value="Data Analyst">Data Analyst</option>
-                    <option value="Designer">Designer</option>
-                </select>
-                <div class="error"></div>
-            </div>
 
-            <div class="input-control">
-                <label for="bio">Bio</label>
-                <textarea id="bio" name="bio" rows="4"></textarea>
-                <div class="error"></div>
-            </div>
 
-            <button type="submit" id="Close">Save changes</button>
-        </form>
-    </div>
+    <!-- Section cachée pour les détails -->
+    <section id="details-section" style="display: none;">
 
-    
-    <script src="freelence.js"></script>
+
+    </section>
+
+    <script src="/commponents/freelence.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

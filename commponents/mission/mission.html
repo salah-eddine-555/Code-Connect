@@ -60,6 +60,111 @@ body{
   background-color: #198754 !important;
   color: #fff;
 }
+#add-mission{
+    padding: 10px;
+    margin-top: 10px;
+    max-width: fit-content;
+    color: white;
+    background-color: #108a00;
+    border: none;
+    border-radius: 4px;
+}
+
+/* === MODAL STYLES (Copied from freelance.css) === */
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1050; /* Ensure it's above other content */
+}
+
+.modal-container.show-modal {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* This is the form itself */
+#mission-form {
+  width: 90%;
+  max-width: 500px; /* Good width for a form */
+  margin: 20px;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  font-size: 14px; /* Slightly larger text */
+  border: #108a00 1px solid;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+#mission-form h1 {
+  color: #0f2027;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#mission-form button {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  color: white;
+  background-color: #108a00;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#mission-form #close-modal-btn {
+  background-color: #f44336; /* Red color for close button */
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px; /* Add space between fields */
+}
+.input-control label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.input-control input,
+.input-control textarea {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+.input-control input:focus,
+.input-control textarea:focus {
+  outline: 0;
+  border-color: #108a00; /* Highlight on focus */
+}
+.input-control .error {
+  color: #ff3860;
+  font-size: 12px;
+  height: 15px;
+  margin-top: 2px;
+}
+.input-control.success input,
+.input-control.success textarea {
+  border-color: #09c372;
+}
+.input-control.error input,
+.input-control.error textarea {
+  border-color: #ff3860;
+}
+.input-control textarea {
+    resize: vertical;
+    min-height: 100px;
+}
   </style>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -71,7 +176,7 @@ body{
                 <a class="nav-link active" aria-current="page" href="../freelence.html">Freelance</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="mission/">Missions</a>
+                <a class="nav-link" href="mission.html">Missions</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">service</a>
@@ -91,6 +196,58 @@ body{
 
 
     <section id="section-mission">
+    <button id="add-mission" class="mx-auto d-block">Ajouter une mission</button>
+    
+    <section id="section-mission">
+        </section>
+    
+
+    <div class="modal-container" id="mission-modal-container">
+        <form id="mission-form">
+            <h1>Ajouter une nouvelle mission</h1>
+            
+            <div class="input-control">
+                <label for="title">Titre de la mission</label>
+                <input id="title" name="title" type="text">
+                <div class="error"></div>
+            </div>
+            
+            <div class="input-control">
+                <label for="company">Entreprise</label>
+                <input id="company" name="company" type="text">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="description">Description</label>
+                <textarea id="description" name="description"></textarea>
+                <div class="error"></div>
+            </div>
+            
+            <div class="input-control">
+                <label for="location">Localisation</label>
+                <input id="location" name="location" type="text">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="duration">Durée</label>
+                <input id="duration" name="duration" type="text" placeholder="ex: 1 mois">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="budget">Budget</label>
+                <input id="budget" name="budget" type="text" placeholder="ex: 1000 €">
+                <div class="error"></div>
+            </div>
+           
+            <button type="submit">Soumettre la mission</button>
+            <button type="button" id="close-modal-btn">Fermer</button>
+        </form>
+    </div>
+    
+         
         
                  <!-- Les cartes seront insérées ici dynamiquement -->
       
