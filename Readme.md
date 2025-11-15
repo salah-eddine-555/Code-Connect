@@ -1,10 +1,6 @@
 
 
 
-branch develop
-<<<<<<< HEAD
 
-++
-=======
-add salah
->>>>>>> 209dc77427580807349bb280f2074bdb1494a98d
+le lien jiira  => https://salahzemrani44.atlassian.net/jira/software/projects/CC/boards/2?atlOrigin=eyJpIjoiOGQxYzZjMWMyYzEzNDRmYjk5ZmUzZmNhMjg0ZjA4YjgiLCJwIjoiaiJ9
+
