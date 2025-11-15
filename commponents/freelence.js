@@ -1,18 +1,18 @@
 const STORAGE_KEY = 'freelancerData';
 
-async function getData() {
-    const storedData = localStorage.getItem(STORAGE_KEY);
+// async function getData() {
+//     const storedData = localStorage.getItem(STORAGE_KEY);
 
-    if (storedData) {
-        return JSON.parse(storedData);
-    } else {
-        const freelance = await fetch('../data/freelence.json');
-        const dataFreeelance = await freelance.json();
+//     if (storedData) {
+//         return JSON.parse(storedData);
+//     } else {
+//         const freelance = await fetch('../data/freelence.json');
+//         const dataFreeelance = await freelance.json();
 
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(dataFreeelance));
-        return dataFreeelance;
-    }
-}
+//         localStorage.setItem(STORAGE_KEY, JSON.stringify(dataFreeelance));
+//         return dataFreeelance;
+//     }
+// }
 
 // // function 1 pour lister les freelencer(son photo, specialisation , leur moyenne)charge depuis json
 async function getData() {
@@ -308,5 +308,8 @@ function filterBySpecialty() {
                 }
             }
         });
-    });
+    });    
 }
+    
+    
+
